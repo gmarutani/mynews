@@ -23,4 +23,11 @@ Route::group(['prefix' => 'admin'], function() {
     Route::get( 'news/create' , 'App\Http\Controllers\Admin\NewsController@add' );
 });
 
+Route::group(['prefix' => 'admin'], function() {
+    Route::get( 'profile/create' , 'App\Http\Controllers\Admin\ProfileController@add' );
+});
+
+Route::group(['prefix' => 'admin'], function() {
+    Route::get( 'profile/edit' , 'App\Http\Controllers\Admin\ProfileController@edit' );
+});
 
